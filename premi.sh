@@ -21,6 +21,10 @@ TIMES="10"
 CHATID="5668206416"
 KEY="6563943318:AAG4oGG6HWWJ-LsFYKn5e7bQGGktzXAb7oE"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
+Ram_Usage="$((mem_used / 1024))"
+Ram_Total="$((mem_total / 1024))"
+tanggal=`date -d "0 days" +"%d-%m-%Y - %X" `
+OS_Name=$( cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' )
 # ===================
 clear
   # // Exporint IP AddressInformation
@@ -320,12 +324,8 @@ restart_system(){
 <code>Owner    :</code><code>$username</code>
 <code>Domain   :</code><code>$domain</code>
 <code>IPVPS    :</code><code>$IPVPS</code>
-<code>ISP      :</code><code>$ISP</code>
-<code>DATE     :</code><code>$DATEVPS</code>
+<code>OS       :</code><code>$OS_Name</code>
 <code>Time     :</code><code>$TIMEZONE</code>
-<code>Exp Sc.  :</code><code>$exp</code>
-<code>────────────────────</code>
-<b> SCRIPT NOTIF </b>
 <code>────────────────────</code>
 <i>Automatic Notifications From Github</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://wa.me/6289503595243"}]]}' 
